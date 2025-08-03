@@ -1,0 +1,52 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about {
+  .content {
+    background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .content-subtitle {
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: block;
+    color: var(--default-color);
+  }
+
+  .content-title {
+    color: var(--heading-color);
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    line-height: 1.7;
+    color: var(--default-color);
+  }
+
+  .btn-get-started {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    border-radius: 30px;
+    padding: 8px 30px;
+    border: 2px solid transparent;
+    transition: 0.3s all ease-in-out;
+    font-size: 14px;
+
+    &:hover {
+      border-color: var(--accent-color);
+      background-color: transparent;
+      color: var(--accent-color);
+    }
+  }
+
+  .lead {
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--default-color);
+  }
+}

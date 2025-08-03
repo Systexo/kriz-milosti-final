@@ -1,0 +1,770 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Home - Kříž Milosti</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon/favicon.ico' %}" rel="icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/img/favicon/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/favicon/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/img/favicon/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'assets/img/favicon/site.webmanifest' %}">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'main_en:index' %}" class="logo d-flex align-items-center">
+        <img src="{% static 'assets/img/logo.png' %}" alt="Kříž Milosti">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'main_en:index' %}" class="active">Home</a></li>
+          <li><a href="{% url 'main_en:about' %}">About Us</a></li>
+          <li><a href="{% url 'main_en:visit_us' %}">Visit Us</a></li>
+          <!-- <li><a href="{% url 'main_en:sermons' %}">Sermons</a></li> -->
+          <li><a href="{% url 'main_en:connect' %}">Connect</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="{% static 'assets/img/slider/slider-1.webp' %}" alt="">
+          <div class="carousel-container">
+            <h2>Welcome to Kříž Milosti</h2>
+            <p>We are a <b>Church</b> rooted in <b>Grace</b>. Growing in <b>Prague</b></p>
+            <a href="#connect" class="btn-get-started">Get Connected</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/slider/slider-2.webp' %}" alt="">
+          <div class="carousel-container">
+            <h2>Gospel-Centered</h2>
+            <p>Everything we do is rooted in the good news of Jesus Christ. Our gatherings, teaching, and relationships are all shaped by the transforming grace of the gospel.</p>
+            <a href="#connect" class="btn-get-started">Get Connected</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/slider/slider-3.webp' %}" alt="">
+          <div class="carousel-container">
+            <h2>Spirit-Led</h2>
+            <p>We rely on the Holy Spirit to guide, empower, and shape us as a church family. Whether in worship or daily life, we seek to follow God’s leading with open hearts.</p>
+            <a href="#connect" class="btn-get-started">Get Connected</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/slider/slider-4.webp' %}" alt="">
+          <div class="carousel-container">
+            <h2>Christ-Exalting</h2>
+            <p>Our aim is to honor and make much of Jesus in everything. Through worship, community, and mission, we want Christ to be seen and treasured.</p>
+            <a href="#connect" class="btn-get-started">Get Connected</a>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section>
+    <!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+        <div class="content">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
+              <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
+                <div class="img">
+                  <img src="{% static 'assets/img/img_v_3.jpg' %}" alt="circle image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+
+            <div class="offset-md-0 offset-lg-1 col-sm-12 col-md-5 col-lg-5 col-xl-4" data-aos="fade-up">
+              <div class="px-3">
+                <span class="content-subtitle">Welcome!</span>
+                <h2 class="content-title text-start">
+                  Welcome to our growing church community in Prague</h2>
+                <p class="lead">
+                  We’re a group of people transformed by the grace of God and passionate about
+                  following Jesus together. Whether you’re exploring faith or looking for a gospel-
+                  centered church home, you’re warmly invited to join us for worship.
+                </p>
+                <p class="mb-5">
+                  We meet every Sunday in a home setting with heartfelt worship, expositional
+                  preaching, and real community.
+                </p>
+                <p>
+                  <a href="#connect" class="btn-get-started">Join Us Today</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /About Section -->
+
+    <!-- About 2 Section -->
+    <section id="about-2" class="about-2 section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="image-wrapper" data-aos="zoom-out" data-aos-delay="100">
+                  <img src="{% static 'assets/img/about/about-6.webp' %}" alt="" class="img-fluid main-image">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="image-wrapper" data-aos="fade-up" data-aos-delay="300">
+                  <img src="{% static 'assets/img/about/about-5.webp' %}" alt="" class="img-fluid secondary-image">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="image-wrapper" data-aos="fade-up" data-aos-delay="300">
+                  <img src="{% static 'assets/img/about/about-4.webp' %}" alt="" class="img-fluid secondary-image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
+              <span class="subtitle">About Kříž Milosti</span>
+
+              <h2>Rooted in Grace. Growing Together in Christ.</h2>
+
+              <p class="description">We are a new church plant in Prague affiliated with <b>Sovereign Grace Churches</b>,
+                a family of churches passionate about the gospel, grounded in biblical truth, and
+                committed to planting and strengthening churches around the world.</p>
+              <div><br></div>
+              <div>Our mission is simple:&nbsp;</div>
+              <p></p>
+
+              <div class="features">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-box">
+                    <i class="bi bi-mic-fill"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4><a href="#" class="stretched-link">Glorify God</a></h4>
+                    <p>Glorify God in all we do!</p>
+                  </div>
+                </div>
+
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                  <div class="icon-box accent">
+                    <i class="bi bi-people-fill"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4><a href="#" class="stretched-link">Make disciples</a></h4>
+                    <p>Make disciples of Jesus through worship, teaching, fellowship and mission!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-button" data-aos="fade-up" data-aos-delay="500">
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /About 2 Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
+            <h2 class="content-title">What to expect?</h2>
+            <p class="lead">A Place to Experience Real Worship and Real Community</p>
+            <p class="mb-5">
+              No matter where you’re coming from, you’ll find a warm welcome and genuine fellowship at Kříž Milosti. Here’s what you can expect when you visit:
+            </p>
+            <p>
+              <a href="{% url 'main_en:visit_us' %}" class="btn btn-get-started">Join Us</a>
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-6 ps-lg-5">
+            <div class="row">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="services-item" data-aos="fade-up">
+                  <div class="services-icon">
+                    <i class="bi bi-journal-text" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h3>Gospel‑centered preaching</h3>
+                    <p>Clear teaching from the Bible that points to Jesus and applies to everyday life.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="services-item" data-aos="fade-up" data-aos-delay="100">
+                  <div class="services-icon">
+                    <i class="bi bi-music-note-beamed" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h3>Bilingual worship</h3>
+                    <p>Singing and prayer in Czech and English. Lyrics provided so you can join in.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="services-item" data-aos="fade-up" data-aos-delay="200">
+                  <div class="services-icon">
+                    <i class="bi bi-people" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h3>Real community</h3>
+                    <p>We share lunch together after the service each week and make space for conversation and care.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="services-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="services-icon">
+                    <i class="bi bi-house-heart" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h3>Simple home gathering</h3>
+                    <p>We meet near Ládví in a family home. We celebrate the Lord’s Supper weekly and kids are welcome.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Services Section -->
+
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Moments from Our Gatherings</h2>
+        <p>Life at Kříž Milosti</p>
+      </div>
+    
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-1.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 1">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-1.jpeg' %}" class="glightbox preview-link" aria-label="Open image 1"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-2.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 2">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-2.jpeg' %}" class="glightbox preview-link" aria-label="Open image 2"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-3.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 3">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-3.jpeg' %}" class="glightbox preview-link" aria-label="Open image 3"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-4.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 4">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-4.jpeg' %}" class="glightbox preview-link" aria-label="Open image 4"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-5.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 5">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-5.jpeg' %}" class="glightbox preview-link" aria-label="Open image 5"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-6.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 6">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-6.jpeg' %}" class="glightbox preview-link" aria-label="Open image 6"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-7.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 7">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-7.jpeg' %}" class="glightbox preview-link" aria-label="Open image 7"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-8.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 8">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-8.jpeg' %}" class="glightbox preview-link" aria-label="Open image 8"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-9.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 9">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-9.jpeg' %}" class="glightbox preview-link" aria-label="Open image 9"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-10.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 10">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-10.jpeg' %}" class="glightbox preview-link" aria-label="Open image 10"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-11.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 11">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-11.jpeg' %}" class="glightbox preview-link" aria-label="Open image 11"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-12.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 12">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-12.jpeg' %}" class="glightbox preview-link" aria-label="Open image 12"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-13.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 13">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-13.jpeg' %}" class="glightbox preview-link" aria-label="Open image 13"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-14.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 14">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-14.jpeg' %}" class="glightbox preview-link" aria-label="Open image 14"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-15.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 15">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-15.jpeg' %}" class="glightbox preview-link" aria-label="Open image 15"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-16.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 16">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-16.jpeg' %}" class="glightbox preview-link" aria-label="Open image 16"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-17.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 17">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-17.jpeg' %}" class="glightbox preview-link" aria-label="Open image 17"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-18.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 18">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-18.jpeg' %}" class="glightbox preview-link" aria-label="Open image 18"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-19.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 19">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-19.jpeg' %}" class="glightbox preview-link" aria-label="Open image 19"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-20.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 20">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-20.jpeg' %}" class="glightbox preview-link" aria-label="Open image 20"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-21.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 21">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-21.jpeg' %}" class="glightbox preview-link" aria-label="Open image 21"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-22.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 22">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-22.jpeg' %}" class="glightbox preview-link" aria-label="Open image 22"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-23.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 23">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-23.jpeg' %}" class="glightbox preview-link" aria-label="Open image 23"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-24.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 24">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-24.jpeg' %}" class="glightbox preview-link" aria-label="Open image 24"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-25.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 25">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-25.jpeg' %}" class="glightbox preview-link" aria-label="Open image 25"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-26.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 26">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-26.jpeg' %}" class="glightbox preview-link" aria-label="Open image 26"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-27.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 27">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-27.jpeg' %}" class="glightbox preview-link" aria-label="Open image 27"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-28.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 28">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-28.jpeg' %}" class="glightbox preview-link" aria-label="Open image 28"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-29.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 29">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-29.jpeg' %}" class="glightbox preview-link" aria-label="Open image 29"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-30.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 30">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-30.jpeg' %}" class="glightbox preview-link" aria-label="Open image 30"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-31.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 31">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-31.jpeg' %}" class="glightbox preview-link" aria-label="Open image 31"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-32.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 32">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-32.jpeg' %}" class="glightbox preview-link" aria-label="Open image 32"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <!--<div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-33.jpeg' %}" class="img-fluid" alt="Kříž Milosti gallery 33">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/gallery/gallery-33.jpeg' %}" class="glightbox preview-link" aria-label="Open image 33"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div>-->
+    
+        </div>
+      </div>
+    </section> 
+    <!-- /Gallery Section -->
+    
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section light-background">
+      <div class="content">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h3>Subscribe To Our Newsletter</h3>
+              <p class="opacity-50">
+                Get updates on upcoming services, Bible studies, and special events straight to your inbox.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <!-- Keep action as-is until you replace with a Django view -->
+              <form action="forms/newsletter.php" class="form-subscribe php-email-form">
+                <div class="form-group d-flex align-items-stretch">
+                  <input type="email" name="email" class="form-control h-100" placeholder="Enter your e-mail">
+                  <input type="submit" class="btn btn-secondary px-4" value="Subcribe">
+                </div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your subscription request has been sent. Thank you!
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Call To Action Section -->
+
+    <!-- Contact 2 Section -->
+    <section id="connect" class="contact-2 section">
+      <div class="container section-title" data-aos="fade-up">
+        <p>Join Us This Sunday</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="300">
+            <div class="contact-info">
+              <div class="contact-card">
+                <h3>How to find us?</h3>
+                <p>We host church services bi-weekly every other Sunday and also Thursday Bible Studies.<br><br>Thursday Bible Study:</p>
+                <div>18:00 - 21:00</div>
+                <div><br></div>
+                <div>Sunday Church Services:</div>
+                <div>10:30 - 12:00</div>
+                <p></p>
+
+                <div class="contact-details">
+                  <div class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <div>
+                      <h4>Email:</h4>
+                      <p>spolecne@krizmilosti.cz</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                      <h4>Phone:</h4>
+                      <p>+420 605 558 600</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <div>
+                      <h4>Address:</h4>
+                      <p>For address please fill out the form, send us an email, or text us using the information above.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="social-links">
+                  <a href="https://www.facebook.com/people/K%C5%99%C3%AD%C5%BE-Milosti/61579195550236/"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/krizmilosti"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
+            <div class="contact-form-wrapper">
+              <!-- Keep action as-is until you replace with a Django view -->
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Honza Novák" required="">
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <label for="email">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="jan.novak@seznam.cz" required="">
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Can we come next Sunday?" required="">
+                </div>
+                <div class="form-group mt-3">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" name="message" rows="7" placeholder="I would love to come for the next service, what is your address?" required=""></textarea>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Contact 2 Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kříž Milosti</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.facebook.com/people/K%C5%99%C3%AD%C5%BE-Milosti/61579195550236/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/krizmilosti"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>

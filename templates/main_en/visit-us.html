@@ -1,0 +1,260 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Visit Us - Kříž Milosti</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon/favicon.ico' %}" rel="icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/img/favicon/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/favicon/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/img/favicon/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'assets/img/favicon/site.webmanifest' %}">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="visit-us-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'main_en:index' %}" class="logo d-flex align-items-center">
+        <img src="{% static 'assets/img/logo.png' %}" alt="Kříž Milosti">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'main_en:index' %}">Home</a></li>
+          <li><a href="{% url 'main_en:about' %}">About Us</a></li>
+          <li><a href="{% url 'main_en:visit_us' %}" class="active">Visit Us</a></li>
+          <!-- <li><a href="{% url 'main_en:sermons' %}">Sermons</a></li> -->
+          <li><a href="{% url 'main_en:connect' %}">Connect</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url('{% static 'assets/img/page-bg/visit-us.jpeg' %}');">
+      <div class="container position-relative">
+        <h1>Visit Us</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'main_en:index' %}">Home</a></li>
+            <li class="current">Services</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- End Page Title -->
+
+    <!-- About 5 Section -->
+    <section id="about-5" class="about-5 section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6">
+            <span class="about-subtitle" data-aos="fade-up">Visit Us</span>
+
+            <h2 class="about-title" data-aos="fade-up" data-aos-delay="200">What to expect?</h2>
+
+            <div class="about-content" data-aos="fade-up" data-aos-delay="300">
+              <div class="mission mb-4">
+                <p>
+                  Visiting a new church can be a bit overwhelming, we know. However, we hope this visit is no stress, and easy for you and your family to navigate.
+                  <br><br>
+                  Our whole service is centered on the Gospel of Grace, with a particular view of Christ and his work on the cross to bring salvation to sinners and sinners into the
+                  Kingdom of God. We will sing the good news, pray the good news, preach the
+                  good news, testify to the good news, and partake of the Lord’s supper (a
+                  reminder of the good news) each week.
+                  <br><br>
+                  During our singing you’ll hear a mix of old and new hymns, English and Czech
+                  songs, all of them rooted in the classical reformed understanding of Christ’s
+                  completed work on the cross.
+                  <br><br>
+                  If you have kids, that’s great. Currently our services are in the Corpus family’s
+                  house, or in the garden weather permitting. They have a toddler living with them
+                  and have all sorts of things to keep little ones engaged. If your kids are a bit
+                  older,. that’s great, they are welcome in the service as well, we love to hear kids
+                  getting loud and moving around during the service. It’s a reminder that the Lord
+                  saves families, and brings them into his family.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="about-img position-relative" data-aos="zoom-in" data-aos-delay="200">
+              <img src="{% static 'assets/img/about/about-3.webp' %}" alt="About Image" class="img-fluid" loading="lazy">
+              <div class="shape-1"></div>
+              <div class="shape-2"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /About 5 Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p>Here are some answers to most common questions</p>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What should I wear?</h3>
+                <div class="faq-content">
+                  <p>Wear what you want, no judgment. You can wear shorts in the summer, dresses,
+                    pants, slacks, jeans, sweats, whatever… really. We won’t judge you, and ask that
+                    you don’t judge others for their clothing choices either.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item faq-active">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>When should I arrive?</h3>
+                <div class="faq-content">
+                  <p>10:30 AM. We are located a short five minute walk from Ládví Metro station.
+                    There are also bus and tram links available at Ládví. We start at 10:30, and end
+                    around 12:00. At the conclusion of the service we invite you to Stay and enjoy
+                    the Lord’s supper and then lunch together. Bring something for lunch, but the
+                    bread and wine will be provided.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Where do I go?</h3>
+                <div class="faq-content">
+                  <p>You can message Vince on WhatsApp to get the exact address.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Is there parking nearby?</h3>
+                <div class="faq-content">
+                  <p>Yes, there is street parking in from of the house, and on weekends it is free.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>How do I get in?</h3>
+                <div class="faq-content">
+                  <p>If the gate is not open, ring the buzzer.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2">
+            <img src="{% static 'assets/img/misc/faq-1.webp' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /Faq Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section light-background">
+      <div class="content">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h3>Subscribe To Our Newsletter</h3>
+              <p class="opacity-50">
+                Get updates on upcoming services, Bible studies, and special events straight to your inbox.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <form action="forms/newsletter.php" class="form-subscribe php-email-form">
+                <div class="form-group d-flex align-items-stretch">
+                  <input type="email" name="email" class="form-control h-100" placeholder="Enter your e-mail">
+                  <input type="submit" class="btn btn-secondary px-4" value="Subcribe">
+                </div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your subscription request has been sent. Thank you!
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Call To Action Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kříž Milosti</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.facebook.com/people/K%C5%99%C3%AD%C5%BE-Milosti/61579195550236/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/krizmilosti"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>

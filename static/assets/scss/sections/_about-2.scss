@@ -1,0 +1,140 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# About 2 Section
+--------------------------------------------------------------*/
+.about-2 {
+  .image-wrapper {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+      height: auto;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .content {
+    padding-left: 30px;
+
+    .subtitle {
+      display: inline-block;
+      background: color-mix(in srgb, var(--accent-color), transparent 90%);
+      color: var(--accent-color);
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .description {
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .features {
+      margin-bottom: 30px;
+
+      .feature-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+        padding: 30px;
+        border-radius: 10px;
+        background: color-mix(in srgb, var(--accent-color), transparent 96%);
+
+        .icon-box {
+          flex-shrink: 0;
+          width: 50px;
+          height: 50px;
+          background: color-mix(in srgb, var(--accent-color), transparent 90%);
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 15px;
+          transition: 0.3s;
+
+          i {
+            font-size: 24px;
+            color: var(--accent-color);
+          }
+        }
+
+        .feature-content {
+          position: relative;
+
+          h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 700;
+
+            a {
+              color: var(--heading-color);
+            }
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .icon-box {
+            background: var(--accent-color);
+
+            i {
+              color: var(--contrast-color);
+            }
+          }
+        }
+      }
+    }
+
+    .btn {
+      background: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 12px 36px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+
+      &:hover {
+        background: color-mix(in srgb, var(--accent-color), transparent 25%);
+      }
+    }
+
+    @media (max-width: 992px) {
+      padding-left: 0;
+      margin-top: 40px;
+      text-align: center;
+
+      .features .feature-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .icon-box {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

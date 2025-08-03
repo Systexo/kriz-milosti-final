@@ -1,0 +1,63 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services {
+  .content-subtitle {
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: block;
+    color: var(--default-color);
+  }
+
+  .content-title {
+    color: var(--heading-color);
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    line-height: 1.7;
+    color: var(--default-color);
+  }
+
+  .lead {
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--default-color);
+  }
+
+  .btn-get-started {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    border-radius: 30px;
+    padding: 8px 30px;
+    border: 2px solid transparent;
+    transition: 0.3s all ease-in-out;
+    font-size: 14px;
+
+    &:hover {
+      border-color: var(--accent-color);
+      background-color: transparent;
+      color: var(--accent-color);
+    }
+  }
+
+  .services-item {
+    .services-icon {
+      color: var(--accent-color);
+      margin-bottom: 20px;
+
+      i {
+        font-size: 48px;
+      }
+    }
+
+    h3 {
+      font-size: 17px;
+      font-weight: 400;
+      color: var(--heading-color);
+    }
+  }
+}
